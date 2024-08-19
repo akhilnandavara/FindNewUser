@@ -7,9 +7,9 @@ export default function NumberChecker() {
   const [result, setResult] = useState(null);
 
   const DEP = import.meta.env.VITE_DEPLOYMENT;
-  //  import.meta.env.VITE_BACKEND_API_DEP
 
-  const backAndApi = import.meta.env.VITE_BACKEND_API_DEV;
+   
+  const backAndApi = DEP ? import.meta.env.VITE_BACKEND_API_DEP : import.meta.env.VITE_BACKEND_API_DEV;
 
   console.log("backAndApi...", backAndApi);
 
