@@ -7,11 +7,11 @@ export default function NumberChecker() {
   const [result, setResult] = useState(null);
 
   const DEP = import.meta.env.VITE_DEPLOYMENT;
-  const backAndApi = DEP
-    ? import.meta.env.VITE_BACKEND_API_DEP
-    : import.meta.env.VITE_BACKEND_API_DEV;
+  //  import.meta.env.VITE_BACKEND_API_DEP
 
-    console.log("backAndApi...",backAndApi)
+  const backAndApi = import.meta.env.VITE_BACKEND_API_DEV;
+
+  console.log("backAndApi...", backAndApi);
 
   useEffect(() => {
     async function firstApiCall() {
