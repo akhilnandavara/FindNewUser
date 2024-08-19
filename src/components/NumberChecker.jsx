@@ -8,10 +8,9 @@ export default function NumberChecker() {
 
   const DEP = import.meta.env.VITE_DEPLOYMENT;
 
-   
-  const backAndApi = DEP ? import.meta.env.VITE_BACKEND_API_DEP : import.meta.env.VITE_BACKEND_API_DEV;
-
-  console.log("backAndApi...", backAndApi);
+  const backAndApi = DEP
+    ? import.meta.env.VITE_BACKEND_API_DEP
+    : import.meta.env.VITE_BACKEND_API_DEV;
 
   useEffect(() => {
     async function firstApiCall() {
@@ -21,9 +20,9 @@ export default function NumberChecker() {
           headers: {
             Accept: "application/json",
             "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*",
           },
         });
+        console.log("...");
       } catch (error) {
         console.log("Error in first API call", error.message);
       }
@@ -42,7 +41,6 @@ export default function NumberChecker() {
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
-          "Access-Control-Allow-Origin": "*",
         },
         body: JSON.stringify({ service, userName: phoneNumber }),
       });
