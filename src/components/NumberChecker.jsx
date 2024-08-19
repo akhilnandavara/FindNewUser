@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const NumberChecker = () => {
+export default function NumberChecker() {
   const [service, setService] = useState("swiggy");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [loading, setLoading] = useState(false);
@@ -11,10 +11,12 @@ const NumberChecker = () => {
     ? import.meta.env.VITE_BACKEND_API_DEP
     : import.meta.env.VITE_BACKEND_API_DEV;
 
+    console.log("backAndApi...",backAndApi)
+
   useEffect(() => {
     async function firstApiCall() {
       try {
-         await fetch(backAndApi, {
+        await fetch(backAndApi, {
           method: "POST",
           headers: {
             Accept: "application/json",
@@ -131,6 +133,4 @@ const NumberChecker = () => {
       </div>
     </div>
   );
-};
-
-export default NumberChecker;
+}
