@@ -88,7 +88,7 @@ export default function NumberChecker() {
               <option value="zomato" disabled>
                 Zomato
               </option>
-              <option value="Amazon" disabled>
+              <option value="Amazon">
                 Amazon
               </option>
             </select>
