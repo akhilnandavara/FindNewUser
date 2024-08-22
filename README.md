@@ -1,6 +1,6 @@
-# 📱 Number Checker
+# 📱 Find New Number
 
-**Number Checker** is a sleek and user-friendly web application designed to verify if a phone number is registered on popular platforms like **Swiggy**, **Amazon**, **Snapdeal**, and **Flipkart**. We're excited to announce that **Zomato** will be added soon!
+**Find New Number** is a sleek and user-friendly web application designed to verify if a phone number is registered on popular platforms like **Swiggy**, **Amazon**, **Snapdeal**, and **Flipkart**. We're excited to announce that **Zomato** will be added soon!
 
 ---
 
@@ -69,5 +69,3 @@ Contributions are welcome! If you have any ideas for improvements or new feature
 ## 📜 License
 
 This project is licensed under the **MIT License**. Feel free to use, modify, and distribute it as you wish.
-
----
