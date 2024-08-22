@@ -1,5 +1,3 @@
----
-
 # 📱 Number Checker
 
 **Number Checker** is a sleek and user-friendly web application designed to verify if a phone number is registered on popular platforms like **Swiggy**, **Amazon**, **Snapdeal**, and **Flipkart**. We're excited to announce that **Zomato** will be added soon!
