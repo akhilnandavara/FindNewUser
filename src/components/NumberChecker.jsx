@@ -32,8 +32,8 @@ export default function NumberChecker() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Make the API call here
     setLoading(true);
+    // API call 
     let response;
     try {
       response = await fetch(`${backAndApi}/api/check-number`, {
@@ -116,16 +116,16 @@ export default function NumberChecker() {
           </button>
         </form>
         {!loading && result ? (
-          <div className="mt-4 text-center text-red-500 text-lg font-semibold">
+          <div className={`${result==="Registered"?"text-green-400" :"text-red-500"} mt-4 text-center text-red-500 text-lg font-semibold`}>
             {result}
           </div>
         ) : (
           <div
             className={` ${
               loading ? "visible" : "opacity-0"
-            }  text-red-400 transition-all duration-200 mt-4 text-center text-lg font-semibold`}
+            }  text-green-400 transition-all duration-200 mt-4 text-center text-lg font-semibold`}
           >
-            loading...
+            Loading...
           </div>
         )}
       </div>
