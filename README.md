@@ -1,8 +1,4 @@
----
 
-### README.md:
-```markdown
-# Number Checker
 
 Number Checker is a web application that allows users to verify if a phone number is registered on popular platforms like Swiggy, Amazon, Snapdeal, and Flipkart. Zomato support will be added soon.
 
@@ -57,5 +53,3 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 
 This project is licensed under the MIT License.
 ```
-
----

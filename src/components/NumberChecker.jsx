@@ -116,14 +116,14 @@ export default function NumberChecker() {
           </button>
         </form>
         {!loading && result ? (
-          <div className={`${result==="Not Registered" ? "text-green-400" : "text-red-500"} mt-4 text-center  text-lg font-semibold`}>
+          <div className={`${result==="Not Registered" ? "text-green-800" : "text-red-500"} mt-4 text-center  text-lg font-semibold`}>
             {result}
           </div>
         ) : (
           <div
             className={` ${
               loading ? "visible" : "opacity-0"
-            }  text-green-400 transition-all duration-200 mt-4 text-center text-lg font-semibold`}
+            }  text-green-800 transition-all duration-200 mt-4 text-center text-lg font-semibold`}
           >
             Loading...
           </div>
