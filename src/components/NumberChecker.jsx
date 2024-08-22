@@ -116,7 +116,7 @@ export default function NumberChecker() {
           </button>
         </form>
         {!loading && result ? (
-          <div className={`${result==="Registered"?"text-green-400" :"text-red-500"} mt-4 text-center text-red-500 text-lg font-semibold`}>
+          <div className={`${result==="Not Registered" ? "text-green-400" : "text-red-500"} mt-4 text-center  text-lg font-semibold`}>
             {result}
           </div>
         ) : (
